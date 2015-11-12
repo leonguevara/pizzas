@@ -12,6 +12,11 @@ class MasasController: UIViewController {
 
     @IBOutlet weak var tamanoPizza: UILabel!
     var masas : [String] = ["Delgada","Crujiente","Gruesa"]
+    var tamanoElegido : String = "Grande"
+    
+    override func viewWillAppear(animated: Bool) {
+        tamanoPizza.text = "Tamaño elegido: \(tamanoElegido)"
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
