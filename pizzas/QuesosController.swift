@@ -1,22 +1,23 @@
 //
-//  MasasController.swift
+//  QuesosController.swift
 //  pizzas
 //
-//  Created by León Felipe Guevara Chávez on 2015-11-11.
+//  Created by León Felipe Guevara Chávez on 2015-11-12.
 //  Copyright © 2015 León Felipe Guevara Chávez. All rights reserved.
 //
 
 import UIKit
 
-class MasasController: UIViewController {
+class QuesosController: UIViewController {
 
-    @IBOutlet weak var tamanoPizza: UILabel!
-    var masas : [String] = ["Delgada","Crujiente","Gruesa"]
+    var quesos : [String] = ["Mozzarela","Cheddar","Parmesano","Sin queso"]
     var tamanoElegido : String = "Grande"
-    var masaElegida : String = ""
-    
+    var masaElegida : String = "Crujiente"
+    var quesoElegido : String = ""
+
+    @IBOutlet weak var tamanoMasaPizza: UILabel!
     override func viewWillAppear(animated: Bool) {
-        tamanoPizza.text = "Tamaño: \(tamanoElegido)"
+        tamanoMasaPizza.text = "Tamaño: \(tamanoElegido) - Masa: \(masaElegida)"
     }
     
     override func viewDidLoad() {
@@ -41,25 +42,19 @@ class MasasController: UIViewController {
     }
     */
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let sigVista=segue.destinationViewController as! QuesosController
-        sigVista.tamanoElegido = tamanoElegido
-        sigVista.masaElegida = masaElegida
-    }
-    
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return masas.count
+        return quesos.count
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
-        return masas[row]
+        return quesos[row]
     }
-
+    
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        masaElegida = masas[row]
+        quesoElegido = quesos[row]
     }
 }
