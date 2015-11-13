@@ -140,7 +140,141 @@ class IngredientesController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func pepperoniClick() {
+        if pepperoni.on {
+            ingredientes++
+            if ingredientes == 5 {
+                inhabilitaSwitches()
+            }
+        }
+        else {
+            ingredientes--
+            if ingredientes == 4 {
+                habilitaSwitches()
+            }
+        }
+    }
+    
+    @IBAction func jamonClick(sender: UISwitch) {
+        if jamon.on {
+            ingredientes++
+            if ingredientes == 5 {
+                inhabilitaSwitches()
+            }
+        }
+        else {
+            ingredientes--
+            if ingredientes == 4 {
+                habilitaSwitches()
+            }
+        }
+    }
+    
+    @IBAction func pavoClick(sender: UISwitch) {
+        if pavo.on {
+            ingredientes++
+            if ingredientes == 5 {
+                inhabilitaSwitches()
+            }
+        }
+        else {
+            ingredientes--
+            if ingredientes == 4 {
+                habilitaSwitches()
+            }
+        }
+    }
+    
+    @IBAction func salchichaClick(sender: UISwitch) {
+        if salchicha.on {
+            ingredientes++
+            if ingredientes == 5 {
+                inhabilitaSwitches()
+            }
+        }
+        else {
+            ingredientes--
+            if ingredientes == 4 {
+                habilitaSwitches()
+            }
+        }
+    }
+    
+    @IBAction func anchoasClick(sender: UISwitch) {
+        if anchoas.on {
+            ingredientes++
+            if ingredientes == 5 {
+                inhabilitaSwitches()
+            }
+        }
+        else {
+            ingredientes--
+            if ingredientes == 4 {
+                habilitaSwitches()
+            }
+        }
+    }
+    
+    @IBAction func aceitunasClick(sender: UISwitch) {
+        if aceitunas.on {
+            ingredientes++
+            if ingredientes == 5 {
+                inhabilitaSwitches()
+            }
+        }
+        else {
+            ingredientes--
+            if ingredientes == 4 {
+                habilitaSwitches()
+            }
+        }
+    }
+    
+    @IBAction func cebollaClick(sender: UISwitch) {
+        if cebolla.on {
+            ingredientes++
+            if ingredientes == 5 {
+                inhabilitaSwitches()
+            }
+        }
+        else {
+            ingredientes--
+            if ingredientes == 4 {
+                habilitaSwitches()
+            }
+        }
+    }
+    
+    @IBAction func pimientoClick(sender: UISwitch) {
+        if pimiento.on {
+            ingredientes++
+            if ingredientes == 5 {
+                inhabilitaSwitches()
+            }
+        }
+        else {
+            ingredientes--
+            if ingredientes == 4 {
+                habilitaSwitches()
+            }
+        }
+    }
+    
+    @IBAction func pinaClick(sender: UISwitch) {
+        if pina.on {
+            ingredientes++
+            if ingredientes == 5 {
+                inhabilitaSwitches()
+            }
+        }
+        else {
+            ingredientes--
+            if ingredientes == 4 {
+                habilitaSwitches()
+            }
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

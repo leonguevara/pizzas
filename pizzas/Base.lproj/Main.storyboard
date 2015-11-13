@@ -274,8 +274,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="t2y-9i-bm0">
-                                <rect key="frame" x="184" y="272" width="51" height="31"/>
+                                <rect key="frame" x="144" y="272" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="pepperoniClick" destination="SWc-PX-sUX" eventType="valueChanged" id="h24-T5-9Tc"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pepperoni" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IzE-f2-oSQ">
                                 <rect key="frame" x="58" y="277" width="78" height="21"/>
@@ -292,8 +295,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="c6E-SN-V3C">
-                                <rect key="frame" x="184" y="318" width="51" height="31"/>
+                                <rect key="frame" x="144" y="318" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="jamonClick:" destination="SWc-PX-sUX" eventType="valueChanged" id="6FY-4V-3VE"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pavo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxi-qY-wCv">
                                 <rect key="frame" x="58" y="369" width="37" height="21"/>
@@ -303,8 +309,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Erj-XU-hfr">
-                                <rect key="frame" x="184" y="364" width="51" height="31"/>
+                                <rect key="frame" x="144" y="364" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="pavoClick:" destination="SWc-PX-sUX" eventType="valueChanged" id="EAv-aT-68a"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salchicha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asf-G1-Ybk">
                                 <rect key="frame" x="58" y="415" width="74" height="21"/>
@@ -314,8 +323,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Mcv-mT-R2Z">
-                                <rect key="frame" x="184" y="410" width="51" height="31"/>
+                                <rect key="frame" x="144" y="410" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="salchichaClick:" destination="SWc-PX-sUX" eventType="valueChanged" id="Iux-rI-wLW"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anchoas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3o-QW-6nP">
                                 <rect key="frame" x="58" y="461" width="67" height="21"/>
@@ -324,12 +336,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vRV-n1-v2z">
-                                <rect key="frame" x="184" y="456" width="51" height="31"/>
-                                <animations/>
-                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aceitunas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gek-tk-AOe">
-                                <rect key="frame" x="366" y="277" width="76" height="21"/>
+                                <rect key="frame" x="409" y="277" width="76" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -338,35 +346,47 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8DN-4t-h1c">
                                 <rect key="frame" x="493" y="272" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="aceitunasClick:" destination="SWc-PX-sUX" eventType="valueChanged" id="2vv-cm-pIM"/>
+                                </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kvR-LE-N0s">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kvR-LE-N0s">
                                 <rect key="frame" x="493" y="318" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="cebollaClick:" destination="SWc-PX-sUX" eventType="valueChanged" id="Ppk-Bs-uVh"/>
+                                </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Cebolla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksG-Jt-qGp">
-                                <rect key="frame" x="366" y="323" width="58" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cebolla" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksG-Jt-qGp">
+                                <rect key="frame" x="409" y="323" width="58" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Wc-YW-fFX">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Wc-YW-fFX">
                                 <rect key="frame" x="493" y="364" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="pimientoClick:" destination="SWc-PX-sUX" eventType="valueChanged" id="SKb-K2-8Fl"/>
+                                </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pimiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUk-uS-UrL">
-                                <rect key="frame" x="366" y="369" width="67" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pimiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUk-uS-UrL">
+                                <rect key="frame" x="409" y="369" width="67" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ij5-pH-2wa">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ij5-pH-2wa">
                                 <rect key="frame" x="493" y="410" width="51" height="31"/>
                                 <animations/>
+                                <connections>
+                                    <action selector="pinaClick:" destination="SWc-PX-sUX" eventType="valueChanged" id="Wfc-55-xYV"/>
+                                </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Piña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wC3-86-i5R">
-                                <rect key="frame" x="366" y="415" width="33" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Piña" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wC3-86-i5R">
+                                <rect key="frame" x="409" y="415" width="33" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -377,15 +397,22 @@
                                 <animations/>
                                 <state key="normal" title="Continuar..."/>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vRV-n1-v2z">
+                                <rect key="frame" x="144" y="456" width="51" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="anchoasClick:" destination="SWc-PX-sUX" eventType="valueChanged" id="y9d-1S-VBu"/>
+                                </connections>
+                            </switch>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Vvy-oz-vxi" firstAttribute="top" secondItem="0jL-dx-d4P" secondAttribute="bottom" constant="8" id="2Qq-qu-UUc"/>
-                            <constraint firstItem="Mcv-mT-R2Z" firstAttribute="leading" secondItem="Asf-G1-Ybk" secondAttribute="trailing" constant="52" id="3zh-UH-pkw"/>
-                            <constraint firstItem="c6E-SN-V3C" firstAttribute="leading" secondItem="ZMX-5Q-0AG" secondAttribute="trailing" constant="74" id="4cK-Hy-Jqu"/>
+                            <constraint firstItem="Mcv-mT-R2Z" firstAttribute="leading" secondItem="Asf-G1-Ybk" secondAttribute="trailing" constant="12" id="3zh-UH-pkw"/>
+                            <constraint firstItem="c6E-SN-V3C" firstAttribute="leading" secondItem="ZMX-5Q-0AG" secondAttribute="trailing" constant="34" id="4cK-Hy-Jqu"/>
                             <constraint firstItem="zxi-qY-wCv" firstAttribute="leading" secondItem="aCV-5R-axR" secondAttribute="leadingMargin" constant="38" id="4hI-eo-mfP"/>
-                            <constraint firstItem="Erj-XU-hfr" firstAttribute="leading" secondItem="zxi-qY-wCv" secondAttribute="trailing" constant="89" id="9ej-zo-zCd"/>
+                            <constraint firstItem="Erj-XU-hfr" firstAttribute="leading" secondItem="zxi-qY-wCv" secondAttribute="trailing" constant="49" id="9ej-zo-zCd"/>
                             <constraint firstItem="tFv-iM-xp6" firstAttribute="centerX" secondItem="aCV-5R-axR" secondAttribute="centerX" id="AXk-yA-bb2"/>
                             <constraint firstItem="t2y-9i-bm0" firstAttribute="top" secondItem="Vvy-oz-vxi" secondAttribute="bottom" constant="51" id="AaL-Gf-pJG"/>
                             <constraint firstItem="zxi-qY-wCv" firstAttribute="top" secondItem="ZMX-5Q-0AG" secondAttribute="bottom" constant="25" id="Bbb-UG-iPt"/>
@@ -393,9 +420,10 @@
                             <constraint firstItem="Mcv-mT-R2Z" firstAttribute="top" secondItem="Erj-XU-hfr" secondAttribute="bottom" constant="15" id="EZ8-hR-JBG"/>
                             <constraint firstItem="Vvy-oz-vxi" firstAttribute="centerX" secondItem="aCV-5R-axR" secondAttribute="centerX" id="GTh-dM-PV7"/>
                             <constraint firstItem="0jL-dx-d4P" firstAttribute="top" secondItem="G4m-qr-MY2" secondAttribute="bottom" constant="8" id="Gpc-vs-KZh"/>
-                            <constraint firstItem="vRV-n1-v2z" firstAttribute="leading" secondItem="B3o-QW-6nP" secondAttribute="trailing" constant="59" id="Ivj-p9-WRk"/>
-                            <constraint firstItem="t2y-9i-bm0" firstAttribute="leading" secondItem="IzE-f2-oSQ" secondAttribute="trailing" constant="48" id="JKw-bU-Phg"/>
-                            <constraint firstItem="Ij5-pH-2wa" firstAttribute="leading" secondItem="wC3-86-i5R" secondAttribute="trailing" constant="94" id="K16-S8-CQu"/>
+                            <constraint firstItem="kvR-LE-N0s" firstAttribute="top" secondItem="c6E-SN-V3C" secondAttribute="top" id="HcT-3u-Aio"/>
+                            <constraint firstItem="vRV-n1-v2z" firstAttribute="leading" secondItem="B3o-QW-6nP" secondAttribute="trailing" constant="19" id="Ivj-p9-WRk"/>
+                            <constraint firstItem="t2y-9i-bm0" firstAttribute="leading" secondItem="IzE-f2-oSQ" secondAttribute="trailing" constant="8" id="JKw-bU-Phg"/>
+                            <constraint firstItem="Ij5-pH-2wa" firstAttribute="leading" secondItem="wC3-86-i5R" secondAttribute="trailing" constant="51" id="K16-S8-CQu"/>
                             <constraint firstItem="wC3-86-i5R" firstAttribute="top" secondItem="HUk-uS-UrL" secondAttribute="bottom" constant="25" id="Pvt-1S-JeV"/>
                             <constraint firstItem="Asf-G1-Ybk" firstAttribute="leading" secondItem="aCV-5R-axR" secondAttribute="leadingMargin" constant="38" id="Q1X-LI-Y5Q"/>
                             <constraint firstItem="ZMX-5Q-0AG" firstAttribute="leading" secondItem="aCV-5R-axR" secondAttribute="leadingMargin" constant="38" id="Q6A-XN-cnl"/>
@@ -405,22 +433,27 @@
                             <constraint firstItem="gek-tk-AOe" firstAttribute="top" secondItem="Vvy-oz-vxi" secondAttribute="bottom" constant="56" id="Tdh-Z4-gdL"/>
                             <constraint firstItem="j66-9c-Cbz" firstAttribute="centerX" secondItem="aCV-5R-axR" secondAttribute="centerX" id="Tor-Nc-KUe"/>
                             <constraint firstItem="ZMX-5Q-0AG" firstAttribute="top" secondItem="IzE-f2-oSQ" secondAttribute="bottom" constant="25" id="VBp-nh-UHq"/>
-                            <constraint firstItem="kvR-LE-N0s" firstAttribute="leading" secondItem="ksG-Jt-qGp" secondAttribute="trailing" constant="69" id="WGx-Bb-LeC"/>
+                            <constraint firstItem="kvR-LE-N0s" firstAttribute="leading" secondItem="ksG-Jt-qGp" secondAttribute="trailing" constant="26" id="WGx-Bb-LeC"/>
                             <constraint firstItem="B3o-QW-6nP" firstAttribute="leading" secondItem="aCV-5R-axR" secondAttribute="leadingMargin" constant="38" id="Y1D-hN-3AV"/>
+                            <constraint firstItem="7Wc-YW-fFX" firstAttribute="top" secondItem="kvR-LE-N0s" secondAttribute="bottom" constant="15" id="ZvE-M7-BjK"/>
                             <constraint firstItem="ksG-Jt-qGp" firstAttribute="top" secondItem="gek-tk-AOe" secondAttribute="bottom" constant="25" id="aAn-PQ-PpQ"/>
+                            <constraint firstItem="kvR-LE-N0s" firstAttribute="leading" secondItem="8DN-4t-h1c" secondAttribute="leading" id="ag3-Hk-pks"/>
                             <constraint firstItem="tFv-iM-xp6" firstAttribute="top" secondItem="Vvy-oz-vxi" secondAttribute="bottom" constant="291" id="dmD-hz-hvI"/>
+                            <constraint firstItem="kvR-LE-N0s" firstAttribute="leading" secondItem="7Wc-YW-fFX" secondAttribute="leading" id="eeg-lx-XXN"/>
                             <constraint firstItem="0jL-dx-d4P" firstAttribute="centerX" secondItem="aCV-5R-axR" secondAttribute="centerX" id="ep0-Ai-uDw"/>
+                            <constraint firstItem="Ij5-pH-2wa" firstAttribute="top" secondItem="Mcv-mT-R2Z" secondAttribute="top" id="gfM-5G-qTX"/>
                             <constraint firstItem="c6E-SN-V3C" firstAttribute="top" secondItem="t2y-9i-bm0" secondAttribute="bottom" constant="15" id="gyo-4h-fAz"/>
                             <constraint firstItem="vRV-n1-v2z" firstAttribute="top" secondItem="Mcv-mT-R2Z" secondAttribute="bottom" constant="15" id="iTR-Kd-jrO"/>
                             <constraint firstItem="G4m-qr-MY2" firstAttribute="centerX" secondItem="aCV-5R-axR" secondAttribute="centerX" id="kn5-B7-toV"/>
+                            <constraint firstItem="kvR-LE-N0s" firstAttribute="leading" secondItem="Ij5-pH-2wa" secondAttribute="leading" id="lAz-tl-DdA"/>
                             <constraint firstItem="Asf-G1-Ybk" firstAttribute="top" secondItem="zxi-qY-wCv" secondAttribute="bottom" constant="25" id="p67-L2-ePl"/>
                             <constraint firstItem="j66-9c-Cbz" firstAttribute="top" secondItem="ruA-ze-Ab4" secondAttribute="bottom" constant="40" id="pa6-eE-SHT"/>
-                            <constraint firstItem="8DN-4t-h1c" firstAttribute="leading" secondItem="gek-tk-AOe" secondAttribute="trailing" constant="51" id="ptN-I8-5eA"/>
+                            <constraint firstItem="8DN-4t-h1c" firstAttribute="leading" secondItem="gek-tk-AOe" secondAttribute="trailing" constant="8" id="ptN-I8-5eA"/>
                             <constraint firstItem="G4m-qr-MY2" firstAttribute="top" secondItem="j66-9c-Cbz" secondAttribute="bottom" constant="8" id="sZ1-iA-zdC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8DN-4t-h1c" secondAttribute="trailing" constant="38" id="trS-bG-ThF"/>
                             <constraint firstItem="IzE-f2-oSQ" firstAttribute="top" secondItem="Vvy-oz-vxi" secondAttribute="bottom" constant="56" id="wTr-po-bRm"/>
                             <constraint firstItem="IzE-f2-oSQ" firstAttribute="leading" secondItem="aCV-5R-axR" secondAttribute="leadingMargin" constant="38" id="wyV-I0-0BS"/>
-                            <constraint firstItem="7Wc-YW-fFX" firstAttribute="leading" secondItem="HUk-uS-UrL" secondAttribute="trailing" constant="60" id="z9m-5K-tjb"/>
+                            <constraint firstItem="7Wc-YW-fFX" firstAttribute="leading" secondItem="HUk-uS-UrL" secondAttribute="trailing" constant="17" id="z9m-5K-tjb"/>
                         </constraints>
                     </view>
                     <connections>

@@ -27,7 +27,12 @@ class ViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let sigVista=segue.destinationViewController as! MasasController
-        sigVista.tamanoElegido = tamanoElegido
+        if (tamanoElegido != "" ) {
+            sigVista.tamanoElegido = tamanoElegido
+        }
+        else {
+            sigVista.tamanoElegido = "Chica"
+        }
     }
 
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {

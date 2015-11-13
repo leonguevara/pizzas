@@ -42,6 +42,18 @@ class QuesosController: UIViewController {
     }
     */
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let sigVista=segue.destinationViewController as! IngredientesController
+        sigVista.tamanoElegido = tamanoElegido
+        sigVista.masaElegida = masaElegida
+        if (quesoElegido != "") {
+            sigVista.quesoElegido = quesoElegido
+        }
+        else {
+            sigVista.quesoElegido = "Mozzarela"
+        }
+    }
+    
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
     }

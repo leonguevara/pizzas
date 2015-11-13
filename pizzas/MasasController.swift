@@ -44,7 +44,12 @@ class MasasController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let sigVista=segue.destinationViewController as! QuesosController
         sigVista.tamanoElegido = tamanoElegido
-        sigVista.masaElegida = masaElegida
+        if (masaElegida != "") {
+            sigVista.masaElegida = masaElegida
+        }
+        else {
+            sigVista.masaElegida = "Delgada"
+        }
     }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
