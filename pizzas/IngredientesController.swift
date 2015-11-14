@@ -21,6 +21,7 @@ class IngredientesController: UIViewController {
     @IBOutlet weak var cebolla: UISwitch!
     @IBOutlet weak var pimiento: UISwitch!
     @IBOutlet weak var pina: UISwitch!
+    @IBOutlet weak var champinon: UISwitch!
     var ingredientes: Int = 0
     var tamanoElegido : String = "Grande"
     var masaElegida : String = "Crujiente"
@@ -67,6 +68,9 @@ class IngredientesController: UIViewController {
         if (pina.on) {
             ingredientes++
         }
+        if (champinon.on) {
+            ingredientes++
+        }
     }
     
     func habilitaSwitches(){
@@ -97,6 +101,9 @@ class IngredientesController: UIViewController {
         if (!pina.enabled) {
             pina.enabled = true
         }
+        if (!champinon.enabled) {
+            champinon.enabled = true
+        }
     }
     
     func inhabilitaSwitches(){
@@ -126,6 +133,9 @@ class IngredientesController: UIViewController {
         }
         if (!pina.on) {
             pina.enabled = false
+        }
+        if (!champinon.on) {
+            champinon.enabled = false
         }
     }
     
@@ -262,6 +272,21 @@ class IngredientesController: UIViewController {
     
     @IBAction func pinaClick(sender: UISwitch) {
         if pina.on {
+            ingredientes++
+            if ingredientes == 5 {
+                inhabilitaSwitches()
+            }
+        }
+        else {
+            ingredientes--
+            if ingredientes == 4 {
+                habilitaSwitches()
+            }
+        }
+    }
+    
+    @IBAction func champinonClick(sender: UISwitch) {
+        if champinon.on {
             ingredientes++
             if ingredientes == 5 {
                 inhabilitaSwitches()
